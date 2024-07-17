@@ -1,4 +1,46 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  h1 {
+    width: 80px;
+  }
+  a {
+    padding: 25px 0;
+  }
+  a:hover {
+    font-weight: 700;
+  }
+  li {
+    margin-left: 64px;
+  }
+  @include mobile() {
+    font-size: 16px;
+    .headerContainer {
+      flex-direction: column;
+      h1 {
+        padding: 16px 0;
+        width: 348px;
+        margin: 0 auto;
+        img {
+          width: 80px;
+        }
+      }
+      ul {
+        flex-wrap: wrap;
+        li {
+          width: 50%;
+          margin-left: 0;
+          text-align: center;
+          border: 1px solid #fff;
+          a {
+            padding: 12px 0;
+          }
+        }
+        li:nth-child(odd) {
+          border-left: none;
+        }
+        li:nth-child(even) {
+          border-right: none;
+        }
+      }
+    }
+  }
 }

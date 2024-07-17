@@ -1,3 +1,254 @@
-.index-title {
-  font-size: 100px;
+.indexBanner {
+  padding: 296px 0;
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true)
+    center center no-repeat;
+  background-size: cover;
+  h2 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 64px;
+  }
+  a {
+    padding: 6px 12px;
+    font-weight: 500;
+  }
+  a:hover {
+    font-weight: 700;
+  }
+  @include mobile() {
+    padding: 144px 0;
+    // 不用sm大小的圖片比較接近設計圖
+    // background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true)
+    //   center center no-repeat;
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+}
+.indexFeature {
+  padding: 80px 0;
+  h2 {
+    font-size: 48px;
+  }
+  ul {
+    margin-left: -12px;
+    margin-right: -12px;
+    li {
+      width: 25%;
+      padding: 0 12px;
+      span {
+        font-size: 100px;
+      }
+    }
+  }
+  @include pad() {
+    // li用gap會往下推擠，用卡斯伯老師的方式要調整li造成的mb，實務上是這樣調整嗎
+    padding-bottom: calc(80px - 24px);
+    li {
+      min-width: 50%;
+      margin-bottom: 24px;
+    }
+  }
+  @include mobile() {
+    padding-top: 40px;
+    padding-bottom: calc(40px - 24px);
+    h2 {
+      font-size: 24px;
+    }
+    li {
+      min-width: 100%;
+    }
+  }
+}
+.indexClassicItems {
+  padding: 80px 0;
+  h2 {
+    font-size: 48px;
+  }
+  ul {
+    margin-left: -12px;
+    margin-right: -12px;
+    li {
+      width: calc(100% / 3);
+      padding: 0 12px;
+      h3 {
+        font-size: 48px;
+      }
+    }
+  }
+  @include pad() {
+    padding-bottom: calc(80px - 24px);
+    li {
+      min-width: 100%;
+      img {
+        max-width: 50%;
+      }
+    }
+  }
+  @include mobile() {
+    h2 {
+      font-size: 24px;
+    }
+    img {
+      min-width: 100%;
+    }
+  }
+}
+.collaborativeItems {
+  padding: 80px 0;
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true)
+    center center no-repeat;
+  background-size: cover;
+  h2 {
+    font-size: 48px;
+  }
+  .collaborativeItemsImg1 {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true)
+      center center no-repeat;
+    height: 240px;
+    background-size: cover;
+  }
+  .collaborativeItemsImg2 {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true)
+      center center no-repeat;
+    height: 240px;
+    background-size: cover;
+  }
+  ul {
+    li {
+      width: 50%;
+      h3 {
+        font-size: 48px;
+      }
+    }
+    li:first-child h3 {
+      border-right: #f1f1f1 0.5px solid;
+    }
+    li:last-child h3 {
+      border-left: #f1f1f1 0.5px solid;
+    }
+  }
+  @include pad() {
+    padding-bottom: calc(80px - 24px);
+    ul {
+      li {
+        min-width: 100%;
+        margin-bottom: 24px;
+        h3 {
+          border: none;
+        }
+      }
+    }
+  }
+  @include mobile() {
+    padding-top: 40px;
+    padding-bottom: calc(40px - 24px);
+    h2 {
+      font-size: 24px;
+    }
+    .collaborativeItemsImg1 {
+      background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true)
+        center center no-repeat;
+      background-size: contain;
+    }
+    .collaborativeItemsImg2 {
+      background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true)
+        center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+.indexTestimonials {
+  padding: 80px 0;
+  h2 {
+    font-size: 48px;
+  }
+  ul {
+    margin-left: -12px;
+    margin-right: -12px;
+    li {
+      width: 25%;
+      padding: 0 12px;
+      .cardContent {
+        height: 205px;
+        padding: 16px;
+        border: 1px solid #dee2e6;
+        border-top: none;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px #00000029;
+        .date {
+          font-size: 14px;
+          color: #707070;
+        }
+      }
+    }
+  }
+  @include pad() {
+    padding-bottom: calc(80px - 24px);
+    ul {
+      li {
+        width: 50%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+  @include mobile() {
+    padding-top: 40px;
+    padding-bottom: calc(40px - 24px);
+    h2 {
+      font-size: 24px;
+    }
+    ul {
+      li {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+.contactUs {
+  padding: 80px 0;
+  h2 {
+    font-size: 48px;
+  }
+  form {
+    input,
+    textarea {
+      padding: 6px 12px;
+      resize: none;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      color: #ccc;
+    }
+    textarea {
+      height: 136px;
+    }
+    button {
+      // padding: 16px 176px;
+      padding: 16px 0;
+      width: 66%;
+      border: none;
+    }
+    button:hover {
+      background-color: #650300;
+    }
+  }
+  @include pad() {
+    p {
+      font-size: 16px;
+    }
+  }
+  @include mobile() {
+    h2 {
+      font-size: 24px;
+    }
+    button {
+      min-width: 100%;
+    }
+  }
 }

@@ -1,0 +1,118 @@
+.mr-1{
+  margin-right: 4px;
+}
+.mb-1 {
+  margin-bottom: 4px;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
+.mb-3 {
+  margin-bottom: 16px;
+}
+.mb-4 {
+  margin-bottom: 24px;
+}
+.mb-5 {
+  margin-bottom: 48px;
+}
+
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-start {
+  justify-content: start;
+}
+.justify-content-end {
+  justify-content: end;
+}
+.align-items-start {
+  align-items: start;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+
+.bg-secondary {
+  background: $secondary;
+}
+.bg-light {
+  background: $light;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-dark {
+  background-color: black;
+}
+
+.text-primary {
+  color: $primary;
+}
+.text-secondary {
+  color: $secondary;
+}
+.text-white {
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: right;
+}
+
+.fs-4 {
+  font-size: 20px;
+}
+.fs-5 {
+  font-size: 24px;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+// Regular
+.fw-normal {
+  font-weight: 400;
+}
+.fw-semibold {
+  font-weight: 600;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.black-italic {
+  font-weight: 900;
+  font-style: italic;
+}
+.fw-medium{
+  font-weight: 500;
+}
