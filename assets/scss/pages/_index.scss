@@ -106,17 +106,10 @@
   h2 {
     font-size: 48px;
   }
-  .collaborativeItemsImg1 {
-    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true)
-      center center no-repeat;
+   img {
     height: 240px;
-    background-size: cover;
-  }
-  .collaborativeItemsImg2 {
-    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true)
-      center center no-repeat;
-    height: 240px;
-    background-size: cover;
+    min-width: 100%;
+    object-fit: cover;
   }
   ul {
     li {
@@ -149,16 +142,6 @@
     padding-bottom: calc(40px - 24px);
     h2 {
       font-size: 24px;
-    }
-    .collaborativeItemsImg1 {
-      background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true)
-        center center no-repeat;
-      background-size: contain;
-    }
-    .collaborativeItemsImg2 {
-      background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true)
-        center center no-repeat;
-      background-size: contain;
     }
   }
 }
