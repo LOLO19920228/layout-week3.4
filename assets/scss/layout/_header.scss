@@ -19,27 +19,27 @@
         padding: 16px 0;
         width: 348px;
         margin: 0 auto;
-        img {
-          width: 80px;
-        }
+      }
+      img {
+        width: 80px;
       }
       ul {
         flex-wrap: wrap;
-        li {
-          width: 50%;
-          margin-left: 0;
-          text-align: center;
-          border: 1px solid #fff;
-          a {
-            padding: 12px 0;
-          }
-        }
-        li:nth-child(odd) {
-          border-left: none;
-        }
-        li:nth-child(even) {
-          border-right: none;
-        }
+      }
+      li {
+        width: 50%;
+        margin-left: 0;
+        text-align: center;
+        border: 1px solid #fff;
+      }
+      a {
+        padding: 12px 0;
+      }
+      li:nth-child(odd) {
+        border-left: none;
+      }
+      li:nth-child(even) {
+        border-right: none;
       }
     }
   }
