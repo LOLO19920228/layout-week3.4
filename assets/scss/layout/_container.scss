@@ -31,3 +31,12 @@
     max-width: 348px;
   }
 }
+.storeNavContainer {
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+  @include pad() {
+    max-width: 100%;
+    padding: 0;
+  }
+}
