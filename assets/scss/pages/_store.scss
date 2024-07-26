@@ -66,12 +66,21 @@
     margin-left: -12px;
     margin-right: -12px;
     li {
-      width: 25%;
       padding: 0 12px;
       margin-bottom: 80px;
       .productColor {
         margin-right: 8px;
       }
+    }
+  }
+  .storeOptical{
+    li{
+      width: 25%;
+    }
+  }
+  .storeSunGlasses{
+    li{
+      width: calc(100% / 3);
     }
   }
   .pagination{
